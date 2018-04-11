@@ -1,8 +1,7 @@
 import express from 'express'
 import path from 'path'
 
-const NODE_ENV = process.env.NODE_ENV
-const PORT = NODE_ENV == "production"? 80: 3000
+const PORT = 3001
 
 const app = express()
 
