@@ -1,5 +1,6 @@
 # Build
 dist
+.DS_STORE
 
 # Logs
 logs
