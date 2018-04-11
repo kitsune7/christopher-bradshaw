@@ -4,7 +4,7 @@
     "description": "Personal website",
     "main": "index.js",
     "scripts": {
-        "start": "node dist/index.js",
+        "start": "forever dist/index.js",
         "build": "babel src -d dist",
         "postinstall": "yarn run build"
     },
@@ -16,7 +16,8 @@
         "yarn": "1.5.1"
     },
     "dependencies": {
-        "express": "^4.16.3"
+        "express": "^4.16.3",
+        "forever": "^0.15.3"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
