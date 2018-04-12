@@ -4,25 +4,18 @@
     "description": "Personal website",
     "main": "index.js",
     "scripts": {
-        "start": "forever dist/index.js",
-        "build": "babel src -d dist",
-        "postinstall": "yarn run build"
+        "start": "npm build && node dist/index.js",
+        "build": "babel src -d dist"
     },
     "repository": "https://github.com/kitsune7/christopher-bradshaw.git",
     "author": "Christopher Bradshaw <christopher.bradshaw7@gmail.com>",
     "license": "MIT",
-    "engines": {
-        "node": "9.4.0",
-        "yarn": "1.5.1"
-    },
     "dependencies": {
-        "express": "^4.16.3",
-        "forever": "^0.15.3"
+        "express": "^4.16.3"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
         "babel-preset-es2015": "^6.24.1",
-        "babel-preset-stage-2": "^6.24.1",
-        "nodemon": "^1.17.3"
+        "babel-preset-stage-2": "^6.24.1"
     }
 }

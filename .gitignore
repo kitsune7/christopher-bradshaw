@@ -1,6 +1,7 @@
 # Build
 dist
 .DS_STORE
+package-lock.json
 
 # Logs
 logs
