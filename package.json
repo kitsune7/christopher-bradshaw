@@ -11,7 +11,8 @@
     "author": "Christopher Bradshaw <christopher.bradshaw7@gmail.com>",
     "license": "MIT",
     "dependencies": {
-        "express": "^4.16.3"
+        "express": "^4.16.3",
+        "request": "^2.87.0"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
