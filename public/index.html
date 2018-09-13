@@ -5,19 +5,82 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>My personal website</title>
+    <title>Christopher Bradshaw</title>
     <meta name="description" content="I'm a description!">
 
-    <link href="images/favicon_me.png" rel="icon" type="image/png" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="images/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <section>
-        <main>
-            <p>Um. Hi :)</p>
-        </main>
+    <nav>
+        <img src="images/fox.svg" alt="fox icon" id="logo" />
+        <a href="#home">Home</a>
+        <a href="#about">About me</a>
+        <a href="#projects">Projects</a>
+        <a href="#work">Work Experience</a>
+        <a href="#contact">Get in touch</a>
+    </nav>
+    <section id="home">
+        <h1>Hi, I'm Chris</h1>
+        <h2>Web developer extraordinaire and potentially your best friend</h2>
     </section>
+    <section id="about">
+        <img id="me" src="images/me.png" alt="me" />
+        <article>
+            <p>My name is Christopher Bradshaw.</p>
+            <p>I like foxes.</p>
+            <p>You'll probably like me ;)</p>
+        </article>
+    </section>
+    <section id="projects">
+        <h2>Here are a few projects I've worked on recently</h2>
+        <div id="project-icons">
+            <a href="http://ttr-demo.christopher-bradshaw.com/" title="Ticket to Ride">
+                <img class="project-icon" src="images/ttr.png" alt="Ticket to Ride">
+            </a>
+        </div>
+    </section>
+    <section id="work">
+        <h2>Here's where I've been for the last little while</h2>
+        <ul>
+            <li>DataBased</li>
+            <li>Lifey</li>
+            <li>Webular Technologies</li>
+            <li>FamilySearch</li>
+            <li>BYU College of Physical and Mathematical Sciences</li>
+            <li>Academic Innovations</li>
+            <li>61 Athlete</li>
+            <li>Guardian Realty Utah</li>
+            <li>Eelio LLC</li>
+        </ul>
+    </section>
+    <footer id="contact">
+        <h2>Feel free to get in touch</h2>
+        <div id="social-icons">
+            <div>
+                <span>Email:</span>
+                <a href="mailto:&#099;&#104;&#114;&#105;&#115;&#116;&#111;&#112;&#104;&#101;&#114;&#046;&#098;&#114;&#097;&#100;&#115;&#104;&#097;&#119;&#055;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
+                    &#099;&#104;&#114;&#105;&#115;&#116;&#111;&#112;&#104;&#101;&#114;&#046;&#098;&#114;&#097;&#100;&#115;&#104;&#097;&#119;&#055;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
+                </a>
+                <br />
+                <span>Cell:</span>
+                <a href="tel:+&#049;&#051;&#056;&#053;&#050;&#049;&#057;&#048;&#050;&#051;&#056;">
+                    (&#051;&#056;&#053;)&#032;&#050;&#049;&#057;&#045;&#048;&#050;&#051;&#056;
+                </a>
+            </div>
+            <a href="https://www.linkedin.com/in/christophergbradshaw/" title="LinkedIn" target="_blank">
+                <img class="social-icon" src="images/linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/kitsune7" title="Github" target="_blank">
+                <img class="social-icon" src="images/github.svg" alt="Github" />
+            </a>
+            <a href="https://codepen.io/happikitsune/pens/public/" title="Codepen" target="_blank">
+                <img class="social-icon" src="images/codepen.svg" alt="Codepen" />
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
