@@ -4,8 +4,7 @@
     "description": "Personal website",
     "main": "index.js",
     "scripts": {
-        "start": "npm run build && node dist/index.js",
-        "build": "babel src -d dist"
+        "start": "node index.js"
     },
     "repository": "https://github.com/kitsune7/christopher-bradshaw.git",
     "author": "Christopher Bradshaw <christopher.bradshaw7@gmail.com>",
@@ -13,9 +12,5 @@
     "dependencies": {
         "express": "^4.16.3",
         "request": "^2.87.0"
-    },
-    "devDependencies": {
-        "babel-cli": "^6.26.0",
-        "babel-preset-env": "^1.7.0"
     }
 }
