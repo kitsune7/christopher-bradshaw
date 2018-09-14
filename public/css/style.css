@@ -129,11 +129,15 @@ section:nth-of-type(4) {
     background: fixed url('../images/linedpaper.png') #fff;
 }
 
-#work ul {
+section:nth-of-type(4) ul {
     margin-top: 30px;
     margin-left: 200px;
     font-size: 20px;
     line-height: 28px;
+}
+
+ol {
+    margin-left: var(--standard-padding);
 }
 
 footer {
