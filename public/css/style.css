@@ -1,15 +1,69 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
+/* Variables */
+/* ------------------------------------------------------------------------- */
+:root {
+    --messy-font: 'Caveat', cursive;
+    --secondary-font: 'Open Sans Condensed', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+
+    --white: #fff;
+    --off-white: #ebe1cd;
+    --dark-bg-color: #252525;
+    --bg-color1: #639fab;
+    --bg-color2: #1c5d99;
+    --hover: #f46036;
+
+    --nav-height: 70px;
+    --standard-padding: 50px;
 }
 
+/* Theme */
+/* ------------------------------------------------------------------------- */
+html, body {
+    height: 100%;
+}
+
+body {
+    color: var(--dark-bg-color);
+    font-family: var(--body-font);
+}
+
+section {
+    height: calc(100% - var(--nav-height) - var(--standard-padding));
+    padding: var(--standard-padding);
+    position: relative;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    color: var(--hover);
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    font-family: var(--messy-font);
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+
+/* Navigation */
+/* ------------------------------------------------------------------------- */
 nav {
-    height: 70px;
-    background-color: #292929;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--dark-bg-color);
     font-weight: 300;
+    height: var(--nav-height);
     position: fixed;
     top: 0;
     width: 100%;
@@ -17,56 +71,29 @@ nav {
 }
 
 #logo {
-    height: 50px;
+    height: 70%;
     margin-right: 20px;
 }
 
 nav a {
     text-transform: capitalize;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
     padding: 20px;
 }
 
-a:hover {
-    color: #e67e22;
+/* Page specific styles */
+/* ------------------------------------------------------------------------- */
+section:nth-of-type(1) {
+    background: url('../images/vintage-concrete.png') var(--off-white);
+    margin-top: calc(var(--nav-height) - var(--standard-padding));
 }
 
-#home {
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background: url('../images/vintage-concrete.png');
-}
-
-h1 {
-    font-size: 100px;
-    text-align: center;
-    font-family: 'Caveat', cursive;
-}
-
-#home h2 {
+section:nth-of-type(1) h2 {
     margin-top: 20px;
 }
 
-h2 {
-    font-size: 36px;
-    text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
-#about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    background: #A2D0BA;
-    color: #333;
+section:nth-of-type(2) {
+    background: var(--bg-color1);
+    color: var(--white);
     font-size: 20px;
     line-height: 24px;
     font-weight: 300;
@@ -81,10 +108,13 @@ h2 {
     z-index: 0;
 }
 
-#projects {
-    height: 700px;
-    background: #D87E67;
+section:nth-of-type(3) {
+    background: var(--bg-color2);
     padding: 50px 10px;
+}
+
+section:nth-of-type(3) h2 {
+    color: var(--white);
 }
 
 #project-icons {
@@ -94,10 +124,9 @@ h2 {
     margin-top: 30px;
 }
 
-#work {
+section:nth-of-type(4) {
     padding: 50px;
     background: url('../images/linedpaper.png');
-    height: 400px;
 }
 
 #work ul {
@@ -107,13 +136,13 @@ h2 {
     line-height: 28px;
 }
 
-#contact {
-    color: #fff;
-    background-color: #222;
+footer {
+    color: var(--bg-color2);
+    background-color: var(--dark-bg-color);
     padding: 30px;
 }
 
-#contact p, span {
+footer p, span {
     font-size: 20px;
     line-height: 30px;
 }
@@ -125,7 +154,19 @@ h2 {
     margin: 30px;
 }
 
-.social-icon {
+.highlight {
+    display: none;
+}
+
+#social-icons a:hover .highlight {
+    display: block;
+}
+
+#social-icons a:hover .social-icon {
+    display: none;
+}
+
+.social-icon, .highlight {
     height: 70px;
 }
 
@@ -133,4 +174,38 @@ h2 {
     margin: 20px;
     border-radius: 16px;
     height: 250px;
+}
+
+article {
+    color: var(--white);
+    max-width: 50%;
+    line-height: 28px;
+}
+
+article a {
+    color: var(--bg-color2);
+    padding: 0;
+}
+
+article a:hover {
+    color: var(--bg-color2);
+    text-decoration: underline;
+}
+
+/* Standalone Classes */
+/* ------------------------------------------------------------------------- */
+.anchor {
+    position: absolute;
+    top: calc(var(--nav-height) * -1);
+}
+
+.horizontal-group, .vertical-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.vertical-group {
+    flex-direction: column;
 }
