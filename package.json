@@ -4,7 +4,7 @@
     "description": "Personal website",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js"
+        "start": "node src/index.js"
     },
     "repository": "https://github.com/kitsune7/christopher-bradshaw.git",
     "author": "Christopher Bradshaw <christopher.bradshaw7@gmail.com>",

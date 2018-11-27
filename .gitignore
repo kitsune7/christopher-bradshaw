@@ -2,6 +2,7 @@
 dist
 .DS_STORE
 package-lock.json
+.idea
 
 # Logs
 logs
