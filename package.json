@@ -4,13 +4,13 @@
     "description": "Personal website",
     "main": "index.js",
     "scripts": {
-        "start": "node src/index.js"
+        "start": "node --experimental-modules src/index.js"
     },
+    "type": "module",
     "repository": "https://github.com/kitsune7/christopher-bradshaw.git",
     "author": "Christopher Bradshaw <christopher.bradshaw7@gmail.com>",
     "license": "MIT",
     "dependencies": {
-        "express": "^4.16.3",
-        "request": "^2.87.0"
+        "express": "^4.16.3"
     }
 }

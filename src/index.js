@@ -1,14 +1,13 @@
-const express = require('express')
-const path = require('path')
+import express from 'express'
+import { join } from 'path'
+import { __dirname } from './utility.js'
 
-const PORT = 3001
+const port = process.env.PORT|| 3001
 const app = express()
 
 app.use(express.static('public'))
 
-app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/../public/index.html')))
-app.get('*', (req, res) => {
-  return res.sendFile(path.join(__dirname + '/../public/404.html'))
-})
+app.get('/', (req, res) => res.sendFile(join(__dirname, '../public/index.html')))
+app.get('*', (req, res) => res.sendFile(join(__dirname, '../public/404.html')))
 
-app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
+app.listen(port, () => console.log(`Listening on port ${port}`))
