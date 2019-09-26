@@ -1,0 +1,27 @@
+body {
+    background: #f46036;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+h1 {
+    font-family: var(--secondary-font);
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
