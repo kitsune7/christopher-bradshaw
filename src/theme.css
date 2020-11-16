@@ -1,0 +1,19 @@
+:root {
+  --font-primary: 'Lato', sans-serif;
+
+  --color-text: #252525;
+  --color-header-background: var(--color-text);
+  --color-highlight: #f35d0c;
+  --color-border: #4e5866;
+
+  --header-height: 70px;
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 28px;
+  --spacing-8: 32px;
+}

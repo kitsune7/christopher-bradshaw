@@ -1,0 +1,11 @@
+.header {
+  align-items: center;
+  background-color: var(--color-header-background);
+  display: flex;
+  height: var(--header-height);
+  padding: 0 var(--spacing-2);
+}
+
+.header-logo {
+  height: 70%;
+}

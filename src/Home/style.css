@@ -1,0 +1,7 @@
+.home-content {
+  justify-content: center;
+  background-image: url('../images/vintage-concrete.png');
+  display: flex;
+  height: calc(100vh - var(--header-height));
+  flex-direction: column;
+}
