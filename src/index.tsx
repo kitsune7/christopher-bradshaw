@@ -1,11 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter as Router } from 'react-router-dom'
-import App from './App'
+import { render } from "solid-js/web";
 
-ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
-  document.getElementById('app')
-)
+import App from "./App";
+
+render(() => <App />, document.getElementById("app") as HTMLElement);

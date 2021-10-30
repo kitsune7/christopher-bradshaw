@@ -5,8 +5,11 @@
   "main": "src/index.tsx",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "start": "",
-    "format": "prettier --write ."
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "format": "prettier --write \"src/**/*.(ts|tsx)\""
   },
   "author": "Christopher Bradshaw",
   "license": "MIT",
@@ -22,5 +25,8 @@
     "only-allow": "^1.0.0",
     "prettier": "^2.4.1",
     "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "solid-js": "^1.2.0"
   }
 }
