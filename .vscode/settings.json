@@ -1,0 +1,6 @@
+{
+  "prettier.documentSelectors": ["**/*.svelte"],
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  }
+}
