@@ -115,3 +115,6 @@ dist/
 
 # SvelteKit
 .svelte-kit
+
+# Playwright
+test-results
