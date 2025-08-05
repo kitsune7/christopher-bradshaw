@@ -8,11 +8,6 @@ plugins:
   - prettier-plugin-svelte
   - prettier-plugin-tailwindcss
 overrides:
-  - files: ['.svelte-kit/**/*', 'build/**/*', 'dist/**/*', 'node_modules/**/*']
-    excludeFiles: '**/*'
-    options:
-      parser: 'babel' # dummy parser to skip
-
   - files: '*.svelte'
     options:
       parser: svelte
