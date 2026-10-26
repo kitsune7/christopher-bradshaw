@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Fox, Github } from '$lib/assets'
+  import { Fox, Github } from '#lib/assets/index.ts'
 </script>
 
 <header class="flex items-center justify-between bg-black px-4 py-1">

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Block, Header } from '$lib'
+  import { Block, Header } from '#lib'
   import { onMount } from 'svelte'
 
   type TypedMessage = { currentText: string; message: string }
